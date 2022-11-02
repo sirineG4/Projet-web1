@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Now </title>
+
+  <link rel="stylesheet" href="../style/buy.css">
+      <link rel="shortcut icon" href="../image/logo.png">
+
+    <script language="javascript">
+
+  function verifNP(a)
+{
+for (var i = 0;i<a.length ; i++) 
+{
+var c=a.charAt(i).toUpperCase();
+if ((c<'A')||(c>'Z')) 
+  return false;
+}
+return true;
+}
+
+
+function test() 
+{
+ch=f.name.value;
+hc=f.Last.value;
+
+  if (!(verifNP(ch)))
+{
+alert("check your name");
+return false;
+}
+
+
+if (!(verifNP(hc)))
+{
+alert("check your first name");
+return false;
+}
+
+
+     ch=f.method.selectedIndex;
+if(ch==0)
+{
+  alert("please choose your method ");
+  return false;
+}
+
+ch=f.phone.value;
+if (isNaN(ch))
+{
+alert ("your phone number must be number")
+return false;
+}
+ch=f.phone.value.length;
+if (ch!=8) 
+{
+alert ("your phone number must be 8 number")
+return false;
+}
+
+}
+</script>
+
+
+
+
+
+</head>
+<body>
+
+<form name="f" action="../pages/valid2.html" method="post">
+  <div class="wrapper">
+    <div class="title">
+     buy Now
+    </div>
+
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" name="name" class="input" required>
+       </div>  
+
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" name="Last" class="input" required>
+       </div>  
+
+
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" required>
+       </div> 
+
+
+       <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="tel" class="input"  name="phone" required>
+       </div> 
+     
+        <div class="inputfield">
+          <label>payment method</label>
+          <div class="custom_select">
+            <select name="method">
+              <option value="">-------------</option>
+              <option >espece</option>
+              <option >bank card</option>
+            </select>
+          </div>
+       </div> 
+
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" required></textarea>
+       </div>
+
+     
+      <div class="inputfield">
+        <input type="submit" value="Buy Now" class="btn"  name="envoyer" onclick="test()"></input>
+      </div>
+    </div>
+</div>  
+  </form>
+</body>
+</html>
