@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    tp5
+</title>
+<script  src="code2.js">
+
+</script>
+</head>
+<body>
+    Coordonnee
+<form>
+    <table>
+        <tr>
+            <td><label>titre :</label></td>
+            <td><select><option>madame</option><option>monsieur</option></select></td>
+        </tr>
+        <tr>
+            <td><label>nom</label></td>
+            <td><input type="text" id="n" onchange="vv()"></td>
+        </tr>
+        <tr>
+            <td><label>prenom</label></td>
+            <td><input type="text" id="p" onkeyup="valider()"></td>
+        </tr>
+        <tr>
+            <td><label>sexe</label></td>
+            <td><input type="radio">masculin</td>
+            <td><input type="radio">feminin</td> 
+        </tr>
+        <tr>
+            <td><label>email</label></td>
+            <td><input type="email" id="e" onchange="mail()"></td>    
+        </tr>
+        <tr>
+            <td><label>tel</label></td>
+            <td><input type="tel"></td>
+        </tr>
+        <tr>
+            <td><label>langues</label></td>
+            <td><input type="checkbox">arabe</input></td>
+            <td><input type="checkbox">francais</input></td>
+            <td><input type="checkbox">anglais</input></td>
+     
+        </tr>
+        <tr>
+            <td><label>centre d'interet</label></td>
+            <td><input type="checkbox">musique</input></td>
+            <td><input type="checkbox">sport</input></td>
+            <td><input type="checkbox">anglais</input></td>
+        </tr>
+    </table><button ></button>
+    <input type="submit" value="verifier">
+    <input type="button" value="enregistrer" disabled>
+</form>
+</body>
+</html>

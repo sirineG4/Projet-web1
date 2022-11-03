@@ -1,0 +1,14 @@
+.nav{
+float:right;
+}
+
+ul{
+list-style-type: none;
+}
+menu>li{
+    display: inline;
+    margin:10 px;
+    font:rgba(255,0,76,0,753);
+    padding:15px;
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+tp4
+</title>
+<script language="javascript">
+function b(){
+    f.p.disabled=false;
+}
+function k()
+{
+    f.c.disabled=false;
+}
+function affiche()
+{
+    if(f.log.value=="admin" && f.p.value=="admin")
+       {
+        alert("success");
+       }
+    else
+       {
+        alert("fail");
+       }
+}
+</script>
+</head>
+<body>
+<form name="f">
+Authentification<br>
+<label>login</label>
+<input type="text" name="log" onchange="b()">
+<br>
+<label>password</label>
+<input type="password" name="p" disabled onkeyup="k()">
+<br>
+<a href="#">nouveau utilisateur</a><br>
+<input type="button" name="c" value="confirmer" disabled onclick="affiche()">
+<input type="button" value="effacer">
+</form>
+</body>
+</html>
