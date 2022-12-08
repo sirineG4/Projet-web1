@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join us </title>
+
+  <link rel="stylesheet" href="../style/Join Us.css">
+      <link rel="shortcut icon" href="../image/logo.png">
+<!--
+    <script language="javascript">
+
+  function verifNP(a)
+{
+for (var i = 0;i<a.length ; i++) 
+{
+var c=a.charAt(i).toUpperCase();
+if ((c<'A')||(c>'Z')) 
+  return false;
+}
+return true;
+}
+
+
+function test() 
+{
+ch=f.name.value;
+hc=f.Last.value;
+
+  if (!(verifNP(ch)))
+{
+alert("check your name");
+return false;
+}
+
+
+if (!(verifNP(hc)))
+{
+alert("check your first name");
+return false;
+}
+
+  ch=f.faculty.selectedIndex;
+if(ch==0)
+{
+  alert("please choose your university ");
+  return false;
+}
+
+if(!(f.level[0].checked || f.level[1].checked) )
+{
+   alert("please choose your level");
+return false;
+
+   }
+
+     ch=f.Gender.selectedIndex;
+if(ch==0)
+{
+  alert("please choose your gender ");
+  return false;
+}
+
+ch=f.phone.value;
+if (isNaN(ch))
+{
+alert ("your phone number must be number")
+return false;
+}
+ch=f.phone.value.length;
+if (ch!=8) 
+{
+alert ("your phone number must be 8 number")
+return false;
+}
+
+}
+
+
+
+</script>
+
+-->
+
+
+
+</head>
+<body>
+<!------------------------------NAVBAR--------------------------->
+
+  <section class="header">
+    <a href="home.html">
+    <img src="../image/lo.png" height="120">
+    </a>
+    <div class="navigation-links">
+    <a href="home.html" class="navigation-link">Home</a>	
+    <a href="event.html"class="navigation-link">Events</a>	
+    <a href="about us.html"class="navigation-link">About us</a>	
+         <a href="products.html" class="navigation-link">Products</a>
+
+    <a href="contact us.html"class="navigation-link">Contact us</a>	
+    <a href="Join Us.html" class="navigation-link">Join Us</a>	
+    </div>
+</section>
+
+
+<!------------------------------PAGE--------------------------->
+
+
+  
+<form name="f" action="http://127.0.0.1/proj/php/join.php" method="post">
+  <div class="wrapper">
+    <div class="title">
+      join us
+    </div>
+
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" name="name" class="input" required>
+       </div>  
+
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" name="Last" class="input" required>
+       </div>  
+       <div class="inputfield">
+          <label >college name</label>
+           <div class="custom_select">
+            <select name="faculty">
+              <option value="">---------------</option>
+              <option value="ESSECT">ESSECT</option>
+              <option value="ISG">ISG</option>
+              <option value="INSAT">INSAT</option>
+             <option value="ISI">ISI</option>
+             <option value="ISSAM">ISSAM</option>
+           
+
+            </select>
+       </div>  
+     </div>
+      
+      <div class="inputfield">
+          <label >study level</label>
+         <input type="radio" name="level"value="Licence">Licence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="level" value="Master">Master
+       </div> 
+ 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select name="Gender">
+              <option value="">-------------</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email"  name="email" class="input" required>
+       </div> 
+
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="tel" class="input"  name="phone" required>
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" required name="adrs"></textarea>
+       </div>
+
+      <div class="inputfield">
+          <label>skills</label>
+          <textarea  class="textarea" name="skills"  placeholder="10 ligne max" rows="10" required></textarea>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="join us" class="btn"  name="envoyer" onclick="test()"></input>
+      </div>
+    </div>
+</div>  
+  </form>
+</body>
+</html>
