@@ -48,14 +48,12 @@ INSERT INTO `users` (`firstname`, `lastname`, `email`, `motdepasse`, `phone`, `a
 ('samer', 'soltani', 'sqsfqsdf@thsg.jhg', '96857', '68527', 'poiuyt', 'poikujyhtgrf'),
 ('yjnhbtgvrf', 'jnhbgfv', 'said@gma.com', '8657', '6852', ';j,u,kjynhrfgv', 'ikujyhtg'),
 ('samer', 'soltani', 'htrhr@hotmail.com', '638527', '652741', 'ikujyhtgrf', ';kuj,ynhbgv'),
-('l3asba', 'soltani', 'soltanisemer2002@gmailcom', '9562', '4551', 'olyujnhbg', 'jynhfgvdc'),
 ('kiujyhtg', 'l;kyjnhbgv', 'kujnyhb@samer.com', 'kujyhtgv', ',kjntbgvf', 'k,jnbhgv', 'kujyntbhgv'),
 ('dali', 'soltani', 'maysem@gmail.com', '87365', '6852', 'ml;k,ujnyh', 'l;kj,ynhbg'),
 ('samer', 'soltani', 'soltani@gmail.com', '835620', '9852', 'luj,kynhbgfv', ':;lj,knhb'),
 ('samer', 'soltani', 'soltani811soltanisoltani811@hotmail.com', '82028', '25585', 'kj,ynhtbg', 'jnhtbrgf'),
 ('dali', 'soltani', 'grfeds@gmail.com', '78965', '85241', 'yjnbgv', 'ku,jynhbgvf'),
 ('dali', 'php', 'dalisaid2000@gmail.com', '58585', '968527', 'yhtgrfed', 'tbrgvfd'),
-('l3asba', 'qzsdq', 'admin@gmail.com', '000000', '12345678', 'kjhgf', 'kjhgfd'),
 ('ezfa', 'efza', 'fer@gmail.com', '63852', '6352', 'kjynhg', ';ku,jynhbg');
 COMMIT;
 
